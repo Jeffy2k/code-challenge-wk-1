@@ -1,0 +1,19 @@
+{
+  "name": "code-challenge-wk-1",
+  "version": "1.0.0",
+  "description": "code-challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jeffy2k/code-challenge-wk-1.git"
+  },
+  "author": "Jeff Maina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jeffy2k/code-challenge-wk-1/issues"
+  },
+  "homepage": "https://github.com/Jeffy2k/code-challenge-wk-1#readme"
+}
