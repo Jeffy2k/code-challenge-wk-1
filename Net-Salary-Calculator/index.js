@@ -11,7 +11,7 @@ let pensionablePay;
 let basicSalary = document.getElementById("basic").value;//assigns the value entered in the Basic salary input the variable basicSalary;
 let benefits = document.getElementById("benefits").value;//assigns the value entered in the Benefits input the variable benefits;
 //percentagetax;
-  if (basicSalary < 24000) {// calculates the paye one should pay;
+  if (basicSalary <= 24000) {// calculates the paye one should pay;
     paye = 2400;
   } else if (basicSalary >= 24001 && basicSalary <= 32333) {
     paye = Math.round(24000 * 0.1 + (basicSalary - 24001) * 0.25);
@@ -21,7 +21,7 @@ let benefits = document.getElementById("benefits").value;//assigns the value ent
 
 //NHIF;
   grossPay = +basicSalary + +benefits;
-  if (grossPay >= 1 && grossPay <= 5999) {// calculates the amount of nhif to be deducted 
+  if (grossPay >= 1 && grossPay <= 5999) {// calculates the amount of nhif to be deducted
     nhif = 150;
   } else if (grossPay >= 6000 && grossPay <= 7999) {//if grossPay is 6000- 7999, nhif = 300;
     nhif = 300;
@@ -88,4 +88,3 @@ document.getElementById("line").innerHTML = '_________________';
 document.getElementById("net salary").innerHTML = 'Kes'+' '+netSalary.toLocaleString();
 
 }
-
