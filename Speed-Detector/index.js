@@ -12,7 +12,7 @@ function getValue() {
     let r = Math.floor(q); //rounds down to the nearest interger since a point is only earned when speed is exceeded 5kmh;
     text = "Points:" + " " + r;
   } //prints demerit points if speed limit is exceeded;
-  else if (speed > 135) {
+  else if (speed => 135) {
     text = "License suspended!";
   } //prints 'LICENCE SUSPENDED'when total demerit points exceed 12;
 

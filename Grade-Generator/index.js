@@ -17,7 +17,7 @@ function getValue() {
     text = "GRADE C";
   } //displays GRADE C if value marks >=49 and marks <= 59;
   else if (marks >= 40 && marks <= 49) {
-    text = "GRADE C";
+    text = "GRADE D";
   } //displays GRADE D if value marks >=40 && marks <= 49;
   else if (marks < 40 ) {
     text = "GRADE E";
@@ -25,6 +25,6 @@ function getValue() {
   else if (marks > 100) {
     text = "Invalid mark!";
   } //displays 'The mark entered was invalid' if value of marks is more than 100;
- 
+
   document.getElementById("results").innerHTML = text; //prints the text in the wep page in the
 }
